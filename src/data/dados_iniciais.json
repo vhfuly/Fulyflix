@@ -74,28 +74,24 @@
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Bateria",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "Meus videos de Bateria",
+        "url": "https://www.instagram.com/victor_fuly/"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Povo Adquirido | Cleverson Silva",
+          "url": "https://www.youtube.com/watch?v=Mx1pQtsWdic"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Cobus - Vanilla Sky - Umbrella ",
+          "url": "https://www.youtube.com/watch?v=pBt49uRVZ4M"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
-        },
-        {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "Tony Royster Jr. Drum Solo - Drumeo",
+          "url": "https://youtu.be/QR43J-Xb3AE"
         }
       ]
     },
