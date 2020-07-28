@@ -6,7 +6,7 @@ function Footer() {
   return (
     <FooterBase>
       <a href="https://github.com/vhfuly">
-        <img src={Logo}alt="Logo" />
+        <img  className="Logo" src={Logo}alt="Logo"/>
       </a>
       <p>
         Orgulhosamente criado por
