@@ -19,10 +19,13 @@ export const VideoCardContainer = styled.a`
   align-items: flex-end;
   padding: 16px;
 
-  transition: opacity .3s;
+  transition: opacity .3s, transform 0.3s, margin-left 0.3s, margin-right 0.3s;
   &:hover,
   &:focus {
+    margin-left:80px;
+    margin-right:80px;
     opacity: .5;
+    transform : scale(1.5)
   }
   
   &:not(:first-child) {

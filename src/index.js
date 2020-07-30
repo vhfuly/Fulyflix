@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './pages/home';
-import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import RegisterVideo from './pages/register/video';
 import RegisterCategory from './pages/register/category';
-import Error from './pages/Error';
+import { Link } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -13,7 +13,26 @@ ReactDOM.render(
       <Route path="/register/video" component={RegisterVideo} exact/>
       <Route path="/" component={Home} exact/>
       <Route path="/cadastro/category" component={RegisterCategory} exact/>
-      <Route component={Error} />
+      <Route component={()=>(
+        <div align="center" style={{"margin-top": "-80px", 
+        "backgroundColor":"#000",
+        "color":"#3ea333",
+        "height":"100vh"} }>
+
+        <h1>ERROR 404</h1>
+        <p>Página não encontrada</p>
+          <Link to="/">
+            Ir para Home
+          </Link>
+        <iframe
+
+        height="600px"
+        width="100%"
+        src="https://hipsta-jogo.netlify.app">
+
+        </iframe>
+        </div>
+      )} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
