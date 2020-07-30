@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/home';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import RegisterVideo from './pages/register/video';
 import RegisterCategory from './pages/register/category';
 import { Link } from 'react-router-dom';
@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/register/video" component={RegisterVideo} exact/>
+      <Route path="/register/video" component={RegisterVideo} exact/>     
       <Route path="/" component={Home} exact/>
       <Route path="/cadastro/category" component={RegisterCategory} exact/>
       <Route component={()=>(
