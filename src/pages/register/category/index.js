@@ -26,8 +26,10 @@ function RegisterCategory() {
   }
 
   useEffect(() => {
-    const url = 'http://localhost:8080/categorias';
-    fetch(url)
+    const URL = window.location.hostname.includes('localhost')
+      ?'http://localrost:8080/category'
+      :'https://fulyflix.herokuapp.com/category';
+    fetch(URL)
       .then(async (data) => {
         const response = await data.json();
         setCategory([...response]);
