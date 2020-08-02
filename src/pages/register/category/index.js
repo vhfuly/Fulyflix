@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function RegisterCategory() {
   const initialValues = {
@@ -10,25 +11,12 @@ function RegisterCategory() {
     description: '',
     color: '',
   };
+  const { values, handleChange, clearForm } = useForm(initialValues);
   const [category, setCategory] = useState([]);
-  const [values, setValues] = useState(initialValues);
-
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  }
-
-  function handleChange(event) {
-    setValue(event.target.getAttribute('name'),
-      event.target.value);
-  }
-
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
-      ?'http://localrost:8080/category'
-      :'https://fulyflix.herokuapp.com/category';
+      ? 'http://localhost:8080/categories'
+      : 'https://fulyflix.herokuapp.com/categories';
     fetch(URL)
       .then(async (data) => {
         const response = await data.json();
@@ -40,13 +28,12 @@ function RegisterCategory() {
     <PageDefault>
       <h1>
         Cadastro de Categoria :
-        {values.name}
       </h1>
 
       <form onSubmit={function handleSubmit(event) {
         event.preventDefault();
         setCategory([...category, values]);
-        setValues(initialValues);
+        clearForm();
       }}
       >
 
@@ -86,7 +73,7 @@ function RegisterCategory() {
       <ul>
         {category.map((category, index) => (
           <li key={`${category}${index}`}>
-            {category.name}
+            {category.title}
           </li>
         ))}
 

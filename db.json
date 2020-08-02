@@ -1,16 +1,123 @@
 {
-  "category":[
-  {
-    "id": 1,
-    "name": "Front End",
-    "description": "Uma catregoria",
-    "color": "#6bd1ff"
-  },
-  {
-    "id": 2,
-    "name": "Back End",
-    "description": "Outra catregoria",
-    "color": "#6bd1ff"
-  }
+  "categories": [
+    {
+      "id": 1,
+      "title": "Bateria",
+      "color": "#9cd33b",
+      "link_extra": {
+        "text": "Meus videos de Bateria",
+        "url": "https://www.instagram.com/victor_fuly/"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Filmes",
+      "color": "orange",
+      "link_extra": {
+        "text": "Meus videos de Bateria",
+        "url": "https://www.instagram.com/victor_fuly/"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Games",
+      "color": "Red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "title": "Povo Adquirido | Cleverson Silva",
+      "url": "https://www.youtube.com/watch?v=Mx1pQtsWdic"
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "title": "Mike Portnoy - Panic Attack",
+      "url": "https://www.youtube.com/watch?v=pbraa_AyNpE"
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "title": "Jay Weinberg plays Unsainted",
+      "url": "https://www.youtube.com/watch?v=hfXUQuQV-4o"
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "title": "Kiko Freitas no Batera Clube Jam Session Brazilian Jazz Concert",
+      "url": "https://www.youtube.com/watch?v=LjwyP4Cr8Zo"
+    },
+    {
+      "id": 5,
+      "categoryId": 1,
+      "title": "Cobus - Vanilla Sky - Umbrella ",
+      "url": "https://www.youtube.com/watch?v=pBt49uRVZ4M"
+    },
+    {
+      "id": 6,
+      "categoryId": 1,
+      "title": "Tony Royster Jr. Drum Solo - Drumeo",
+      "url": "https://youtu.be/QR43J-Xb3AE"
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "titulo": "Interestellar",
+      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "titulo": "Gattaca",
+      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+    },
+    {
+      "id": 9,
+      "categoryId": 2,
+      "titulo": "A Chegada",
+      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+    },
+    {
+      "id": 10,
+      "categoryId": 2,
+      "titulo": "Feitiço do Tempo",
+      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+    },
+    {
+      "id": 12,
+      "categoryId": 3,
+      "titulo": "Final Fantasy 7",
+      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+    },
+    {
+      "id": 13,
+      "categoryId": 3,
+      "titulo": "Assassins Creed Valhalla",
+      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+    },
+    {
+      "id": 14,
+      "categoryId": 3,
+      "titulo": "God of War 4",
+      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+    },
+    {
+      "id": 15,
+      "categoryId": 3,
+      "titulo": "Resident Evil 8",
+      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+    },
+    {
+      "id": 16,
+      "categoryId": 3,
+      "titulo": "Pokémon Let's Go Pikachu/Eevee",
+      "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+    }
   ]
 }
